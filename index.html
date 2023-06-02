@@ -21,12 +21,29 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+
+	<style type="text/css">
+
+	@media (max-width:800px){
+			#cap{overflow-x:auto;overflow-y:scroll;height: 100vh;}
+		
+			#lathe{font-size: 3.5vw}
+	}
+
+
+	
+	@media (min-width:800px){
+			#cap{overflow-x:auto;overflow-y:scroll;height: 100vh;}
+		
+			#lathe{font-size:1.5vw}
+	}
+	</style>
   </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="height:1000%;overflow-y:scroll">
 	  
-	  
+	
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
+	    <div class="container" >
 	     
 	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
@@ -48,8 +65,8 @@
 	    </div>
 	  </nav>
 	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	      <div class="slider-item ">
+		  <div class="home-slider  owl-carousel" style="overflow-x:auto;overflow-y:scroll;">
+	      <div id="cap" class="slider-item " >
 	      	<div class="overlay"></div>
 	        <div class="container">
 	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
@@ -61,15 +78,15 @@
 		          		<span class="subheading">Hello!</span>
 			            <h1 class="mb-4 mt-3">I'm <span>Fortune Riagbayire</span></h1>
 			            <h2 class="mb-4">A Mechanical Engineer</h2>
-			            <p><a href="#" class="btn btn-primary py-3 px-4">Hire me</a> 
-							<a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+			            <p><a href="#about-section" class="btn btn-primary py-3 px-4">Hire me</a> 
+							<a href="#about-section" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
 		            </div>
 		          </div>
 	        	</div>
 	        </div>
 	      </div>
 
-	      <div class="slider-item">
+	      <div id="cap" class="slider-item">
 	      	<div class="overlay"></div>
 	        <div class="container">
 	          <div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
@@ -80,8 +97,8 @@
 		          	<div class="text">
 		          		<span class="subheading"></span>
 			            <h1 class="mb-4 mt-3">... <span>A Clean Energy Enthusiast</span></h1>
-			            <p><a href="#" class="btn btn-primary py-3 px-4">Hire me</a> 
-							<a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
+			            <p><a href="#about-section" class="btn btn-primary py-3 px-4">Hire me</a> 
+							<a href="#about-section" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
 		            </div>
 		          </div>
 	        	</div>
@@ -231,9 +248,12 @@
     				<div class="project img ftco-animate d-flex justify-content-center align-items-center"
 					 style="background-image: url(images/forte.png);">
     					<div class="overlay"></div>
-	    				<div class="text text-center p-4"><span>Our solution which is a solar-biomass hybrid cook stove is to provide a clean, smokeless cooking experience for its users. The solar-powered  electricity it generates can also be used for phone charging and lighting.
-						</span>
-	    					<h3><a href="images/frias.pptx" download>Click to download</a></h3>
+	    				<div class="text text-center p-4"><div id="lathe" class="text-white w-200 sm:w-100 "
+							style="height:100%;border:0px white solid;text-shadow:1px 1px 2px black;text-align: justify;font-weight:bolder">Our solution which is a 
+							solar-biomass hybrid cook stove is to provide a clean, smokeless cooking experience for its users. The solar-powered  electricity it generates can also be used for phone charging and lighting.
+						</div>
+	    					<h3 class="mt-5" style="border:1px white solid;font-family:mono;text-shadow:1px 1px 2px black;
+							box-shadow:2px 2px 2px grey;border-radius:5px;"><a href="images/frias.pptx" class="mt-5  d-sm-block"  download>Click to download</a></h3>
 	    					<span></span>
 	    				</div>
     				</div>
@@ -245,28 +265,20 @@
 
 					">
 					<div class="overlay"></div>
-					<div class="text text-center p-4"><span>
+					<div class="text text-center p-4"><div class="text-white w-200 sm:w-100 "
+						style="height:100%;border:0px white solid;color:white;font-weight:bolder;text-shadow:1px 1px 2px black;text-align: justify;" id="lathe">
 						
 						In my final year project i helped design and developed a Solar Wind Hybrid System to provide uninterrupted electricity for students which led to a 10% decrease in lack of electricity 
 						and also reducing about 10,000 tonnes of CO2 yearly.  
 					
 
-					</span>
+					</div>
 						
-						<span></span>
+			
 					</div>
     				
     				</div>
 
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" 
-					style="background-image: url(images/bo.png);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="https://journals.e-palli.com/home/index.php/ajise/article/view/1217">Click to see my Publication </a></h3>
-	    				
-	    				</div>
-    				</div>
-    			</div>
     			<div class="col-md-4">
     				<div class="row">
     					<div class="col-md-12">
@@ -331,7 +343,8 @@
           </div>
           <div class="col-md-4 d-flex ftco-animate">
           	<div class="blog-entry">
-              <a href="https://journals.e-palli.com/home/index.php/ajise/article/view/1217" class="block-20" style="background-image: url('images/fort.png');">
+              <a href="images/abs.pdf" download class="block-20" 
+			  style="background-image: url('images/bint.jpg');">
               </a>
               <div class="text mt-3 float-right d-block">
               	<div class="d-flex align-items-center mb-3 meta">
@@ -340,7 +353,7 @@
 	                	
 	                </p>
                 </div>
-                <h3 class="heading"><a href="https://conferences.e-palli.com/storage/app/files/eic-abstract-book.pdf">
+                <h3 class="heading"><a href="images/abs.pdf" download>
 					Biogas: An Alternative Energy Source for Domestic and Small-Scale Industrial Use in Nigeria</a></h3>
                 <p>In Nigeria today, there is a lot of waste that is being generated on a daily basis. From Domestic wastes to kitchen wastes, poultry and livestock not excluded.</p>
               </div>
